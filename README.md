@@ -1,6 +1,21 @@
-# MxM-Spring2019
-This is a repo for LSTM development I made for the MxM RCOS project.
-This code runs on Python 3 and uses Keras and Tensorflow technology.
+# MxM LSTM creation
 
-Run customLSTM.py to run the LSTM. Change line 9 to a different filename to run a different text file on it.
-Using this you can input a text file and output generated text that is meant to emulate the given text.
+LSTM creation sampling from texts 
+
+## Requirements
+
+Python 3, Keras, Tensorflow
+
+## How to use
+
+Train the model with default settings:
+```bash
+$ python train.py --input tiny-shakespeare.txt
+```
+
+To sample the model at epoch 100:
+```bash
+$ python sample.py 100
+```
+
+Training loss/accuracy is stored in `logs/training_log.csv`.
